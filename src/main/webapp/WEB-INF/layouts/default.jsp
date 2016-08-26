@@ -88,15 +88,17 @@
            
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Something here</a></li>
+            <li><a href="${contextRoot}/addstatus">Add Status</a></li>
             
           </ul>
         </div>
 		<!--/.nav-collapse -->
       </div>
     </nav>
-
-
+    
+    <div class="container">
+		<tiles:insertAttribute name="content" />
+	</div>
 
 
     <!-- Bootstrap core JavaScript
@@ -116,7 +118,7 @@
 </html>
 	
 
-	<tiles:insertAttribute name="content" />
+	
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
